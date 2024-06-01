@@ -25,12 +25,17 @@ body{
     
 }
 table td, table th {
-    padding: 15px;
+    padding: 1.5rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    
 }
 
 table {
     border-spacing: 10px;
-    border-collapse: separate;
+    border-collapse: collapse;
+    box-shadow: 0 .1rem .3rem .2rem rgba(0,0,0,0.3);
 }
 
 table {
