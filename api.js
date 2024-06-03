@@ -11,7 +11,6 @@ export const searchApi = async (username) => {
         throw new Error(res.status);
       }
       const data = await res.json();
-      console.log(data)
       return data;
     } catch (error) {
       return null;
@@ -32,7 +31,6 @@ export const searchApi = async (username) => {
       }
       const data = await res.json();
       const repoNames = data.map(repo => repo.name);
-      console.log(repoNames)
       return repoNames;
       
     } catch (error) {

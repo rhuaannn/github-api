@@ -14,7 +14,7 @@ const showApi = async () => {
   const data = await searchApi(nameGit);
 
   if (data && datarepos) {
-    modalTitle.textContent = data.name || "No name available";
+    modalTitle.textContent = `${data.name} --- Repositorio - ${data.public_repos} `|| "No name available";
     modalBody.innerHTML = `
       <table class="table">
         <thead>
